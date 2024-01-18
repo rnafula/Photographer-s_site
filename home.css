@@ -1,0 +1,31 @@
+
+/*Stlyle for the page title*/
+.title {
+  padding: 20px;
+  text-align: center;
+  background-color:#852e0f;
+ }
+/*style for navigation bar container*/
+
+.topnav {
+  overflow: hidden;
+ }
+.bg {
+  background-color:#852e0f;
+ }
+
+/*links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+ padding: 10px 0px;
+  text-decoration: none;
+ }
+a {
+width:25%;
+ }
+body {
+background-image:url("profile.jpg");
+ }
