@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <%- include("_header,ejs") %>
+
+    <form action="http://localhost:7000/signUp" method="post">
+      <label for="fullname" class="form-label">Full Name</label>
+      <input
+        type="text"
+        id="fullname"
+        name="full_name"
+        class="form-control"
+        aria-describedby="passwordHelpBlock"
+      />
+      <label for="national_id" class="form-label">National Id</label>
+      <input
+        type="text"
+        id="national_id"
+        name="national_id"
+        class="form-control"
+        aria-describedby="passwordHelpBlock"
+      />
+      <label for="email" class="form-label">Email </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        aria-describedby="passwordHelpBlock"
+      />
+      <label for="password" class="form-label">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control"
+        aria-describedby="passwordHelpBlock"
+      />
+      <div id="passwordHelpBlock" class="form-text"></div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
