@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+
     <title>Gallery</title>
   </head>
   <body>
-    <%- include("_header,ejs") %>
+    <%- include("_header.ejs") %>
     <h1>View our photos</h1>
-    <img src="/public/profile.jpg" alt="" />
+    <%= const images= {%> <%[ { src: "girl.jpg", alt: "Image 1" }, { src:
+    "tuktuk.jpg", alt: "Image 2" }, { src: "profile.jpg", alt: "Image 3" }, {
+    src: "wedding.jpg", alt: "Image 4" }, ] %> <%}%>
     <video src=""></video>
   </body>
 </html>
